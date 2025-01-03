@@ -3,16 +3,35 @@
     background-color: #FFFFFF;
     color: #434455;
   }
-  ul{
-    list-style: none;
+  img {
+    display: block;
+  }
+  header{
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .container{
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   nav{
     display: flex;
-    text-align: center;
-    justify-content: center;
+    align-items: center;
   }
-  nav>ul{
+  nav a {
+    margin-right: 76px;
+  }
+  ul{
+    list-style: none;
+  }
+
+  nav ul{
     display: flex;
+    gap: 40px;
+  }
+  nav ul li {
+    padding: 24px 0;
   }
 
   .logo-half{
@@ -28,21 +47,12 @@
     font-family: "Raleway";
     color: #2e2f42;    
   }
+
   .adres{
-    font-style: normal;
-  }
-  .adres>ul{
     display: flex;
+    gap: 40px;
   }
-  .adres-info{
-    font-size: 16px;
-    line-height: 1.5;
-    color: #434455;
-    display: flex;
-  }
-  .adres-info:hover, .adres-info:focus{
-    color:#404BBF;
-  }
+  
   .menu-items{
     font-weight: 500;
     font-size: 16px;
