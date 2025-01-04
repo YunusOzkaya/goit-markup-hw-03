@@ -38,6 +38,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5; 
+    display: inline-block;
+    margin-bottom: 16px;
   }
   .logo-other{
     font-family: "Raleway";
@@ -69,13 +71,22 @@
     padding: 120px 0;
   }
   .visually-hidden{
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
   .second-list{
     display: flex;
     gap: 24px;
   }
-  .second-list li{
+  .second-list-items{
     width: calc((100% - 72px) / 4);
   }
   .second-list li h3{
@@ -122,6 +133,7 @@
   }
   .section-third{
     background-color: #f4f4fd;
+    padding: 120px 0;
   }
   .third-header{
     font-size: 36px;
@@ -130,9 +142,19 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  .third-list{
+    display: flex;
+    gap: 24px;
   }
   .personel{
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .personel-info{
+    padding: 32px 0;
   }
   .personel-names{
     font-weight: 500;
@@ -140,12 +162,19 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+
   }
   .jobs{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
+  }
+  .section-forth{
+    padding: 120px 0x;
   }
   .forth-header{
     font-size: 36px;
@@ -154,6 +183,7 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
   }
   .portfolio-header{
     font-weight: 500;
@@ -169,14 +199,27 @@
     color: #434455;
   }
   .portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .portfolio-list-item{
+    width: calc((100% - 72px) / 4);
+  }
+  .portfolio-list-item div{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
   }
   footer{
    background-color: #2e2f42;
+   padding: 100px 0;
   }
   .foot-p{
     line-height: 1.5;
     color: #f4f4fd;
     letter-spacing: 0.02em;
+    max-width: 264px;
   }
