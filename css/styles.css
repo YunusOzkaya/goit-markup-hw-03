@@ -39,7 +39,6 @@
     text-transform: uppercase;
     color: #4d5ae5; 
     display: inline-block;
-    margin-bottom: 16px;
   }
   .logo-other{
     font-family: "Raleway";
@@ -217,6 +216,11 @@
    background-color: #2e2f42;
    padding: 100px 0;
   }
+  footer a{
+    margin-bottom: 16px;
+
+  }
+
   .foot-p{
     line-height: 1.5;
     color: #f4f4fd;
